@@ -29,7 +29,7 @@
 
 
 可以扫码体验下哦~
-
+觉得还可以的小伙伴帮忙扫码光顾下哈
 ![输入图片说明](https://gitee.com/fqrhello_world/de-watermark/raw/master/gh_697101a8e05a_344.jpg)
 #### 体验地址
 https://gitee.com/fqrhello_world/de-watermark/raw/master/gh_697101a8e05a_344.jpg
