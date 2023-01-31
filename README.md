@@ -2,6 +2,9 @@
 
 #### 介绍
 这是一个仿网易云的微信小程序，现在分享出来，大家一起互相学习学习^_^~~
+基于其他水印工具做部分美化ui，代码内做了操作记录，对于学习者有很大帮助
+
+对你有帮助请点个star吧~
 
 #### 使用说明
 
@@ -17,10 +20,12 @@
 #### 效果预览
 ![输入图片说明](https://foruda.gitee.com/images/1675183592585730311/1ba5565a_10746571.png "屏幕截图 2022-09-20 184206.png")
 ![输入图片说明](https://gitee.com/fqrhello_world/wx_music/raw/master/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-09-20%20184640.png)
-![输入图片说明](images/屏幕截图 2022-09-20 184640.png)
-![输入图片说明](images/屏幕截图 2022-09-20 184743.png)
-![输入图片说明](images/屏幕截图 2022-09-20 185152.png)
-![输入图片说明](images/屏幕截图 2022-09-20 185254.png)
+![输入图片说明](https://gitee.com/fqrhello_world/wx_music/raw/master/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-09-20%20184743.png)
+![输入图片说明](https://gitee.com/fqrhello_world/wx_music/raw/master/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-09-20%20185152.png)
+![输入图片说明](https://gitee.com/fqrhello_world/wx_music/raw/master/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-09-20%20185254.png)
+![输入图片说明](https://gitee.com/fqrhello_world/wx_music/raw/master/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-09-20%20185501.png)
+![输入图片说明](https://gitee.com/fqrhello_world/wx_music/raw/master/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-09-20%20185716.png)
+![输入图片说明](https://gitee.com/fqrhello_world/wx_music/raw/master/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-09-20%20185501.png)
 
 
 可以扫码体验下哦~
