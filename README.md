@@ -16,7 +16,7 @@
 
 #### 效果预览
 ![输入图片说明](https://foruda.gitee.com/images/1675183592585730311/1ba5565a_10746571.png "屏幕截图 2022-09-20 184206.png")
-![输入图片说明](images/屏幕截图 2022-09-20 184640.png)
+![输入图片说明](https://gitee.com/fqrhello_world/wx_music/raw/master/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-09-20%20184640.png)
 ![输入图片说明](images/屏幕截图 2022-09-20 184640.png)
 ![输入图片说明](images/屏幕截图 2022-09-20 184743.png)
 ![输入图片说明](images/屏幕截图 2022-09-20 185152.png)
