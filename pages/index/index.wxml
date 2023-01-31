@@ -1,0 +1,79 @@
+<view class="indexContainer">
+<!-- 轮播图区域 -->
+<!-- indicator-dots显示轮播图方点 -->
+  <swiper class="banners" indicator-dots indicator-color="ivory" 
+  indicator-active-color="#d43c33" autoplay>
+  <swiper-item wx:for="{{bannerList}}" wx:key="bannerId">
+    <!-- 唯一 wx:key 不需要写成对象. 的格式 也不需要{{}} -->
+  <image src="{{item.pic}}"></image>
+  </swiper-item>
+  </swiper>
+  <!-- 五个图标导航栏区域 -->
+  <view class="navContainer">
+    <view class="navItem" bindtap="turn">
+      <text class="iconfont icon-meirituijian"></text>
+    <text>每日推荐</text>
+      </view>
+    <view class="navItem" bindtap="toOther">
+        <text class="iconfont icon-gedan1"></text>
+        <text>other歌单</text>
+    </view>
+      <view class="navItem">
+          <text class="iconfont icon-icon-ranking"></text>
+          <text>排行榜</text>
+      </view>
+      <view class="navItem">
+            <text class="iconfont icon-diantai"></text>
+            <text>电台</text>
+      </view>
+      <view class="navItem">
+         <text class="iconfont icon-zhiboguankanliangbofangsheyingshexiangjixianxing"></text>
+              <text>直播</text>
+      </view>
+  </view>
+  <!-- 推荐歌曲区域 -->
+  <view class="recommendContainer">
+    <!-- 使用组件 -->
+    <NavHeader title="推荐歌曲" nav="为你精心推荐"></NavHeader>
+    <!-- 原方式 -->
+    <!-- <view class="header">
+      <text class="title">推荐歌曲</text>
+    <view>
+      <text>为你精心推荐</text>
+      <text class="more">查看更多</text>
+    </view>
+    </view> -->
+
+<!-- 内容区 -->
+<scroll-view class="recommendScroll" enable-flex="true" 	scroll-x>
+  <!-- enable-flex（允许flex布局）默认为false -->
+  <view class="scrollItem" wx:for="{{recommendList}}" wx:key="id" wx:for-item="recommendItem">
+    <image src="{{recommendItem.picUrl}}"></image>
+    <text>{{recommendItem.name}}</text>
+  </view>
+</scroll-view>
+<NavHeader title="排行榜" nav="热歌方向标"></NavHeader>
+
+<!-- circular	boolean	false	否	是否采用衔接滑动
+vertical	boolean	false	否	滑动方向是否为纵向	
+previous-margin	string	"0px"	否	前边距，可用于露出前一项的一小部分，接受 px 和 rpx 值	
+next-margin	string	"0px"	否	后边距，可用于露出后一项的一小部分，接受 px 和 rpx 值 --> 
+
+ <swiper class="topListSwiper" circular next-margin="50rpx" previous-margin="50rpx">
+<swiper-item wx:for="{{topList}}" wx:key="name">
+  <view class="swiperItem">
+<view class="title">{{item.name}}</view>
+  <!-- 标题 -->
+  <view class="musicItem" wx:for="{{item.tracks}}" wx:key="id" wx:for-item="musicItem">
+    <image src="{{musicItem.al.picUrl}}"></image>
+    <!-- 图片 -->
+    <text class="count">{{index + 1 }}</text>
+    <!-- 序号 -->
+    <text class="musicName">{{musicItem.name}}</text>
+    <!-- 歌名 -->
+  </view>
+</view>
+  </swiper-item>
+</swiper> 
+</view>
+</view>

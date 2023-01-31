@@ -1,0 +1,13 @@
+<import src="/template/myTemplate/myTemplate.wxml"></import>
+<view class="otherContainer">
+<!-- 测试模板 -->
+<!-- 模板里有的类名就不要在这里继续使用 -->
+<view class="otherTitle">测试使用模板</view>
+<!-- myTmp 是template的名name -->
+<template is="myTmp" data="{{...person}}"/>
+
+<!-- 测试获取用户唯一标识openID -->
+<view class="otherTitle">测试获取用户唯一标识openID</view>
+<button bindtap="handleGetOpenId">获取openId</button>
+</view>
+<!--AppSecret 9dd8eff2b1176489fcbb092ddd499ea5 -->

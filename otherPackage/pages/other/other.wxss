@@ -1,0 +1,9 @@
+/* pages/other/other.wxss */
+/* 无论是页面还是样式都要需要引入 */
+/* <!-- 引入模板样式 --> */
+@import "/template/myTemplate/myTemplate.wxss";
+.otherTitle{
+      font-weight: bold;
+      color: red;
+      font-size: 26rpx;
+}

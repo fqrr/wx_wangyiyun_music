@@ -1,0 +1,73 @@
+<view class="videoVontainer">
+  <!-- 头部区域 -->
+  <view class="header">
+    <image src="/static/images/video/video.jpg"></image>
+    <view class="search" bindtap="toSearch">
+      搜索音乐
+    </view>
+    <image src="/static/images/logo.png"></image></view>
+<!-- enable-flex允许设置弹性样式 -->
+<!-- 导航栏区域 -->
+    <scroll-view 
+    scroll-x
+     class="navScroll"
+      enable-flex
+      scroll-into-view="{{'scrpll'+navId}}"
+      scroll-with-animation>
+      <!--scroll-into-view 值应为某子元素id（id不能以数字开头）。设置哪个方向可滚动，则在哪个方向滚动到该元素 -->
+      <!-- scroll-with-animation  实现过渡效果 -->
+      <view id="{{'scrpll'+item.id}}"class="navItem" wx:for="{{videoGroupList}}" wx:key="id" >
+        <!-- active选中时的样式 -->
+        <!-- item.name标签名 -->
+        <!--  data-id 传id是不会把number转string -->
+        <view class="navContent {{navId === item.id?'active':''}}" bindtap="changNav" id="{{item.id}}">{{item.name}}</view>
+      </view>
+    </scroll-view>
+
+      <!-- 视频列表区域 -->
+      <scroll-view scroll-y class="videoScroll"
+      refresher-enabled
+      bindrefresherrefresh="handleRefresher"
+      refresher-triggered="{{isTriggered}}"
+      bindscrolltolower="handleToLower"
+      >
+      <!-- refresher-enabled 开启自定义刷新 -->
+      <!-- bindrefresherrefresh自定义下拉刷新事件 -->
+        <view class="videoItem" wx:for="{{videoList}}" wx:key="id">
+            <video src="{{item.data.urlInfo}}" bindplay="handlePlay"
+            id="{{item.data.vid}}"
+            poster="{{item.data.coverUrl}}" class="common"
+            wx:if="{{videoId === item.data.vid}}"
+            autoplay
+            object-fit="cover"
+            bindtimeupdate="handleTimeUpdate"
+            bindended="handleEnded"
+            ></video>
+            <!-- =object-fit="cover"(覆盖)fill填充 当视频大小与 video 容器大小不一致时，视频的表现形式 -->
+            <!-- poster 为点击视频时以照片形式预览 -->
+            <!-- 通过公关变量videoId获取每次点击视频的vid  播放当前视频时其他显示为图片-->
+            <!-- 性能优化：使用image图片代替video标签 -->
+            <image wx:else bindtap="handlePlay" id="{{item.data.vid}}" class="common" src="{{item.data.coverUrl}}"></image>
+            <!-- 当开始/继续播放时触发 play 事件 -->
+            <view class="content">{{item.data.title}}</view>
+      
+            <view class="footer">
+              <image class="avatar" src="{{item.data.creator.avatarUrl}}"></image>
+              <text class="nickName">{{item.data.creator.nickname}}</text>
+              <view class="comments_praised">
+                <text class="item">
+                  <text class="iconfont icon-buoumaotubiao15"></text>
+                  <text class="count">{{item.data.praisedCount}}</text>
+                </text>
+                <text class="item">
+                  <text class="iconfont icon-pinglun1"></text>
+                  <text class="count">{{item.data.commentCount}}</text>
+                </text>
+                <button open-type="share" class="item btn">
+                  <text class="iconfont icon-gengduo"></text>
+                </button>
+              </view>
+            </view>
+        </view>
+      </scroll-view>
+</view>

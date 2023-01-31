@@ -1,0 +1,41 @@
+/*login.wxss*/
+page{
+  background:-webkit-linear-gradient(top,rgb(253, 245, 245),rgb(240, 207, 205),rgb(168, 223, 245));
+}
+.headportrait{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rpx;
+    font-weight: bold;
+}
+
+.img{
+width: 150rpx;
+height:150rpx;
+border-radius: 50%;
+margin-bottom: 10px;
+}
+.content{ 
+  height: 100%;
+  padding-top: 20rpx;
+}
+.account{
+   display: flex;
+   flex-direction: row;
+   padding-left: 20px;
+   padding-top: 20px;
+   padding-bottom: 10px;
+   width: 90%;
+   border: 1px solid #cccccc;
+   margin-left: 14rpx;
+   margin-bottom: 30rpx;
+   border-radius:30rpx ;
+}
+.title{
+   margin-right: 30px;
+   font-weight: bold;
+}
+

@@ -1,0 +1,39 @@
+<!--login.wxml--> 
+<view class="content">
+  <view class="headportrait">
+      <image src="{{imgSrc}}" mode="widthFix" class="img"
+      bindtap="chooseImg"></image>
+      <text style="display:block;">头像</text>
+    </view>
+  <view class="account">
+    <view class="title">用户名:</view>
+    <view class="num"><input bindinput="account" value="{{account}}" placeholder="用户名/邮箱/手机号" placeholder-style= "color:#999999;"/></view>
+  </view>
+  <view class="account">
+    <view class="title">性别:</view>
+    <view class="num"><input bindblur="accountSex" value="{{Sex}}" placeholder="请输入性别" 
+placeholder-style= "color:# 999999;"/></view>
+</view> 
+<view class="account">
+  <view class="title">生日:</view>
+  <view class="num"><input bindblur="userBirthday" value="{{Birthday}}" placeholder="请输入生日xx年xx月xx日" 
+placeholder-style= "color:# 999999;"/></view>
+</view> 
+    <view class="account">
+      <view class="title">邮箱:</view>
+      <view class="num"><input bindblur="userEmail" value="{{email}}" placeholder="请输入邮箱xxx@xx.com"  
+placeholder-style= "color:# 999999;"/></view>
+  </view> 
+   <view class="account">
+      <view class="title">手机号码:</view>
+      <view class="num"><input bindblur="userPhone" value="{{phone}}" placeholder="请输入手机号"  
+placeholder-style= "color:# 999999;"/>
+</view>
+  </view>
+  <view style="margin-left: 10rpx;"bindtap="getLocation">获取当前位置：</view>
+      <view style="margin-left: 60rpx;"> {{address}}</view>
+      <view style="display:flex;margin-top:100rpx">
+        <button type="primary" style="width:100px" bindtap="login">提交</button>
+        <button type="warn"  style="width:100px">重置</button>
+      </view>
+</view>

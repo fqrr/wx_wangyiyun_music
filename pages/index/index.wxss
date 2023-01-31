@@ -1,0 +1,158 @@
+/**index.wxss**/
+.banners{
+  width: 100%;
+  height: 300rpx;
+}
+/* 轮播图图片 */
+.banners image{
+  width: 100%;
+  height: 100%;
+}
+/* <!-- 五个图标导航栏区域 --> */
+.navContainer{
+  display: flex;
+  flex-direction: row;
+}
+.navItem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+}
+/* 图标背景样式 */
+.navItem .iconfont{
+width: 100rpx;
+height: 100rpx;
+border-radius: 50%;
+text-align: center;
+line-height: 100rpx;
+/* 垂直居中 */
+background:rgb(240, 19, 19);
+color: white;
+margin: 20rpx;
+}
+/* 类的权重要比标签高，所以不会影响上面已定义的  */
+.navItem text{
+  font-size: 26rpx;
+}
+
+/* <!-- 推荐歌曲区域 --> */
+.recommendContainer{
+padding: 20rpx;
+}
+/* .recommendContainer .header .title{
+  font-size: 32rpx;
+  line-height: 80rpx;
+  color: #666;
+}
+
+.recommendContainer .header .more{
+      float: right;
+      border: 1rpx solid #333;
+      border-radius:30rpx ;
+      padding: 10rpx 20rpx;
+      font-size: 24rpx;
+} */
+
+/* <!-- 推荐内容区 --> */
+.recommendScroll{
+  display: flex;
+  height: 300rpx;
+  /* 要给scroll-view 指定高度，不然它下面会拉伸得很长 */
+}
+.scrollItem{
+  width: 200rpx;
+  margin: 20rpx;
+}
+/* <!-- 推荐内容区 图片--> */
+.scrollItem image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+/* <!-- 推荐内容区 文本--> */
+.scrollItem text{
+font-size: 26rpx;
+/*【单行文本溢出隐藏】 省略号代替 */
+/* white-space: nowrap;
+display: block;
+/* 将元素显示为块级元素 */
+/* overflow: hidden;需要在块级元素才能生效 text文本是行内元素 所以需要加上  display: block;
+ */
+ /*
+overflow: hidden;
+text-overflow: ellipsis; */
+/* ellipsis 省略号 */
+
+/*【多行文本溢出隐藏】 省略号代替 */
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+/* 将对象作为弹性弹性盒显示 */
+-webkit-box-orient: vertical; 
+/* 设置对齐模式 vertical垂直 */
+-webkit-line-clamp: 2;
+/* -webkit-line-clamp: 2; 设置行数 */
+}
+
+/* 排行榜 */
+.topList{
+  padding: 20rpx
+}
+/* 热歌榜大盒子 */
+.topListSwiper{
+    height: 450rpx;
+}
+.swiperItem{
+  /* 因为要留一点展示下一项，所以不用100% */
+  width: 96%;
+  background-color:#fbfbfb;
+}
+.musicItem{
+  display: flex;
+  margin-bottom:20rpx ;
+}
+
+
+.swiperItem .title{
+font-size:30rpx;
+line-height: 80rpx;
+}
+
+.musicItem image{
+  width: 100rpx;
+  height:100rpx;
+  border-radius: 6rpx;
+}
+
+.musicItem .count{
+  /* 设置成跟图片等大 */
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height:100rpx ;
+}
+.musicItem .musicName{
+  /* 设置成跟图片等大 */
+  height: 100rpx;
+  text-align: center;
+  line-height:100rpx ;
+  /* 规定歌词大于400rpx时 省略号显示*/
+  max-width: 400rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* 最近播放记录 */
+.recentScroll {
+  display: flex;
+  height: 200rpx;
+}
+.recentItem {
+  margin-right: 20rpx;
+}
+.recentItem image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
