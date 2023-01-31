@@ -3,28 +3,25 @@
 #### 介绍
 这是一个仿网易云的微信小程序，现在分享出来，大家一起互相学习学习^_^~~
 
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
+1. 可以在下面修改自己的服务器地址
+ ![输入图片说明](images/host.jpg)
+
+2. 服务器文件夹是NeteaseCloudMusicApi-master，在NeteaseCloudMusicApi-master文件夹下运行 node app.js打开服务器
+ ![输入图片说明](images/serve.jpg)
 3.  xxxx
 
 #### 效果预览
 ![输入图片说明](https://foruda.gitee.com/images/1675183592585730311/1ba5565a_10746571.png "屏幕截图 2022-09-20 184206.png")
-![输入图片说明](images/host.jpg)
+![输入图片说明](images/屏幕截图 2022-09-20 184640.png)
+![输入图片说明](images/屏幕截图 2022-09-20 184743.png)
+![输入图片说明](images/屏幕截图 2022-09-20 185152.png)
+![输入图片说明](images/屏幕截图 2022-09-20 185254.png)
+
+
+可以扫码体验下哦
 ![输入图片说明](https://gitee.com/fqrhello_world/de-watermark/raw/master/gh_697101a8e05a_344.jpg)
-
-
 #### 体验地址
 https://gitee.com/fqrhello_world/de-watermark/raw/master/gh_697101a8e05a_344.jpg
 
