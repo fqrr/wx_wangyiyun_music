@@ -19,7 +19,7 @@
 2.  xxxx
 3.  xxxx
 ![输入图片说明](https://foruda.gitee.com/images/1675183592585730311/1ba5565a_10746571.png "屏幕截图 2022-09-20 184206.png")
-![输入图片说明](https://gitee.com/fqrhello_world/de-watermark/raw/master/gh_697101a8e05a_344.jpg)
+![输入图片说明](gh_697101a8e05a_344.jpg)
 #### 效果预览
 
 
