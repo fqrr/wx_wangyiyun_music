@@ -5,6 +5,8 @@
 基于其他水印工具做部分美化ui，代码内做了操作记录，对于学习者有很大帮助
 
 对你有帮助请点个star吧~
+![输入图片说明](https://raw.githubusercontent.com/fqrr/wx_wangyiyun_music/master/images/gh_697101a8e05a_344.jpg)
+
 
 #### 使用说明
 
@@ -30,6 +32,7 @@
 
 可以扫码体验下哦~
 觉得还可以的小伙伴帮忙扫码光顾下哈
+
 ![输入图片说明](https://gitee.com/fqrhello_world/de-watermark/raw/master/gh_697101a8e05a_344.jpg)
 #### 体验地址
 https://gitee.com/fqrhello_world/de-watermark/raw/master/gh_697101a8e05a_344.jpg
