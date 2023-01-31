@@ -6,9 +6,11 @@
 #### 使用说明
 
 1. 可以在下面修改自己的服务器地址
+
  ![输入图片说明](images/host.jpg)
 
 2. 服务器文件夹是NeteaseCloudMusicApi-master，在NeteaseCloudMusicApi-master文件夹下运行 node app.js打开服务器
+
  ![输入图片说明](images/serve.jpg)
 3.  xxxx
 
@@ -20,7 +22,8 @@
 ![输入图片说明](images/屏幕截图 2022-09-20 185254.png)
 
 
-可以扫码体验下哦
+可以扫码体验下哦~
+
 ![输入图片说明](https://gitee.com/fqrhello_world/de-watermark/raw/master/gh_697101a8e05a_344.jpg)
 #### 体验地址
 https://gitee.com/fqrhello_world/de-watermark/raw/master/gh_697101a8e05a_344.jpg
